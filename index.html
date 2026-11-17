@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="My First AI Chatbot - A beginner-friendly AI chatbot powered by Groq.">
+
+    <title>My First AI Chatbot</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Chatbot Header -->
+        <header class="chat-header">
+
+            <div class="brand">
+
+                <div class="bot-icon">
+                    ✦
+                </div>
+
+                <div class="brand-info">
+                    <h1>My First AI Chatbot</h1>
+                    <p>
+                        <span class="online-dot"></span>
+                        AI Assistant
+                    </p>
+                </div>
+
+            </div>
+
+            <button id="clear-chat" class="clear-button" type="button">
+                Clear Chat
+            </button>
+
+        </header>
+
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+
+            <!-- Welcome Message -->
+            <section id="welcome-screen" class="welcome-screen">
+
+                <div class="welcome-icon">
+                    ✨
+                </div>
+
+                <h2>Welcome to My First AI Chatbot!</h2>
+
+                <p>
+                    Hello! I'm your AI assistant.
+                    Ask me anything, and I'll do my best to help you.
+                </p>
+
+                <div class="suggestions">
+
+                    <button class="suggestion" type="button"
+                        data-message="Explain artificial intelligence in simple words.">
+                        Explain AI
+                    </button>
+
+                    <button class="suggestion" type="button"
+                        data-message="Give me some interesting facts about space.">
+                        Space Facts
+                    </button>
+
+                    <button class="suggestion" type="button"
+                        data-message="Give me tips for learning programming.">
+                        Programming Tips
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Messages will appear here -->
+            <section id="chat-messages"
+                class="chat-messages"
+                aria-live="polite"
+                aria-label="Chat conversation">
+
+            </section>
+
+
+            <!-- Loading Indicator -->
+            <div id="loading-indicator" class="loading-indicator" hidden>
+
+                <div class="message-avatar">✦</div>
+
+                <div class="typing-bubble">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <span class="loading-text">AI is thinking...</span>
+
+            </div>
+
+        </main>
+
+
+        <!-- Message Input Area -->
+        <footer class="input-area">
+
+            <form id="chat-form" class="input-form">
+
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Ask me anything..."
+                    autocomplete="off"
+                    maxlength="4000"
+                    aria-label="Type your message"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    id="send-button"
+                    aria-label="Send message"
+                >
+                    <span>Send</span>
+                    <span class="send-icon">➤</span>
+                </button>
+
+            </form>
+
+            <p class="footer-note">
+                Powered by Groq AI · Built for learning
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- Connect JavaScript -->
+    <script src="./src/js/script.js" defer></script>
+
+</body>
+
+</html>

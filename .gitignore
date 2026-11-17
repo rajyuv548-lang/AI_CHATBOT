@@ -1,0 +1,17 @@
+
+# Node.js dependencies
+node_modules/
+
+# Environment variables and secret keys
+.env
+.env.local
+.env.*
+
+# Allow example environment file
+!.env.example
+
+# Vercel configuration
+.vercel/
+
+# Debug logs
+npm-debug.log*

@@ -1,0 +1,13 @@
+{
+  "name": "my-first-chatbot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A beginner-friendly AI chatbot using HTML, CSS, JavaScript, Node.js and Groq API",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "devDependencies": {
+    "vercel": "^65.17.0"
+  }
+}
